@@ -1,0 +1,44 @@
+@import './styles/_media-queries.scss';
+
+section {
+  background-color: var(--secondary-color);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-card-title {
+  margin-bottom: 1.25rem;
+}
+
+.services-card-subtitle {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+@include respond-above(md) {
+  .services-card {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./styles/_media-queries.scss";
+
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.coopyright {
+  font-size: 0.875rem;
+  text-align: center;
+
+  &>a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+@include respond-above(md) {
+  .coopyright {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,44 @@
+@import './styles/_media-queries.scss';
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 3.125rem;
+  column-gap: 5rem;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  margin-top: -0.625rem;
+}
+
+.first-desc {
+  margin-bottom: 1.25rem;
+}
+
+@include respond-above(md) {
+  .about-details {
+    flex: 1;
+    order: 2;
+  }
+
+  .about-img {
+    flex: 0.7;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}

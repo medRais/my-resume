@@ -1,0 +1,102 @@
+@import './styles/_media-queries.scss';
+
+section {
+  background-color: var(--secondary-color);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-info {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+
+.projects-card-logo {
+  width: auto;
+  height: 5rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1.25rem;
+}
+
+.projects-card-desc {
+  margin-bottom: 1.25rem;
+}
+
+.projects-card-actions {
+  display: flex;
+  column-gap: 0.625rem;
+  justify-content: center;
+}
+
+.projects-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2;
+  border-radius: 50%;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+.live-btn {
+  fill: #fff;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+  }
+}
+
+.source-btn {
+  fill: var(--social-icon-text-color);
+  background: var(--social-icon-color);
+  border-color: var(--social-icon-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--social-icon-hover-color);
+    border-color: var(--social-icon-hover-color);
+  }
+}
+
+.disabled-btn {
+  fill: var(--social-icon-text-color);
+  background: var(--social-icon-color);
+  border-color: var(--social-icon-color);
+}
+
+@include respond-above(md) {
+  .projects {
+    flex-direction: row;
+  }
+
+  .projects-card {
+    text-align: left;
+  }
+
+  .projects-card-actions {
+    justify-content: flex-start;
+  }
+
+}
