@@ -28,9 +28,6 @@ jobs:
     - name: Build Angular App
       run: ng build --output-path docs --base-href /my-resume/
 
-    - name: Rename index.html to 404.html
-      run: mv docs/index.html docs/404.html
-
     - name: Create .nojekyll File
       run: echo "" > docs/.nojekyll
 
