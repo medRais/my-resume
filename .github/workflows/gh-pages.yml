@@ -22,13 +22,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build
-      run: npm run build-github
+    - name: Build Angular App
+      run: ng build --output-path docs --base-href /my-resume/
 
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/my-resume
+        publish_dir: ./docs
         enable_jekyll: true
