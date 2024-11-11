@@ -22,6 +22,4 @@ Node.js version must be 16.14.0 || 18.10.0
 
 > Pull request must reference an existing issue that describes the issue or feature being submitted.
 
-### GitHub Issues
 
-Before making any change, please discuss it on the [Github issues](https://github.com/lorenzomiscoli/developer-portfolio/issues). In this way, no other developer will work on the same issue and your PR will have a better chance to be accepted.

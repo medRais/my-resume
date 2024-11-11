@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'developer-portfolio' title`, () => {
+  it(`should have the 'Next-Level-Code' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('developer-portfolio');
+    expect(app.title).toEqual('Next-Level-Code');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('developer-portfolio app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('my-resume app is running!');
   });
 });
