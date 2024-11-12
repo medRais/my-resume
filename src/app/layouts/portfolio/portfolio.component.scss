@@ -12,16 +12,19 @@ section {
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 2.5rem; /* Space between the cards */
+  margin: 0 auto; /* Center the grid */
 }
 
 .projects-card {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  text-align: center;
+  background: #fff; /* Optional styling */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Align text in the center */
 }
 
 .projects-card-logo {
